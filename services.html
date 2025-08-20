@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Our Services (BG & SBLC) | Finance Company Limited</title>
+    
+    <!-- === FAVICON CODE === -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- === END FAVICON CODE === -->
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-gold: #C5A565;
+            --dark-bg: #101010;
+            --dark-card: #181818;
+            --dark-border: #2a2a2a;
+            --text-primary: #F5F5F5;
+            --text-secondary: #a0a0a0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg-services {
+            background-image: linear-gradient(rgba(16, 16, 16, 0.85), rgba(16, 16, 16, 1)), url("images/serviceshero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .header-scrolled {
+            background-color: rgba(24, 24, 24, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-[var(--dark-bg)] text-[var(--text-primary)]">
+
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.png" alt="Finance Company Limited Logo" class="h-14 w-auto">
+        </a>
+        <nav class="hidden lg:flex items-center gap-10">
+            <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="text-sm font-medium text-[var(--primary-gold)]" href="services.html">Services</a>
+            <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-white transition-colors" href="about.html">About Us</a>
+            <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-white transition-colors" href="contact.html">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+             <a href="contact.html" class="hidden sm:inline-block px-6 py-2.5 rounded-full bg-[var(--primary-gold)] text-black text-sm font-bold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                Free Consultation
+            </a>
+            <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-2/3 max-w-sm bg-[var(--dark-card)] shadow-lg p-8 lg:hidden">
+         <button id="close-menu-btn" class="absolute top-5 right-5 text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+         </button>
+        <nav class="flex flex-col gap-8 mt-16 text-lg">
+            <a class="mobile-link text-white hover:text-[var(--primary-gold)]" href="index.html">Home</a>
+            <a class="mobile-link text-white hover:text-[var(--primary-gold)]" href="services.html">Services</a>
+            <a class="mobile-link text-white hover:text-[var(--primary-gold)]" href="about.html">About Us</a>
+            <a class="mobile-link text-white hover:text-[var(--primary-gold)]" href="contact.html">Contact</a>
+            <a href="contact.html" class="mt-8 px-6 py-3 rounded-full bg-[var(--primary-gold)] text-black font-bold text-center">Consult Now</a>
+        </nav>
+    </div>
+</header>
+
+<main class="flex-1">
+    <section class="hero-bg-services pt-32 pb-20">
+        <div class="container mx-auto px-6 lg:px-10 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold">Our Financial Instruments</h1>
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-[var(--text-secondary)]">Since 2012, we have been a trusted provider of Bank Guarantees (BG) and Standby Letters of Credit (SBLC), empowering businesses to achieve their financial goals.</p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 lg:px-10 py-20 lg:py-28">
+        <section data-aos="fade-up" class="mb-20">
+            <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-[var(--dark-card)] text-[var(--primary-gold)]"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M21.92,7.62A1,1,0,0,0,21,7H3a1,1,0,0,0,0,2H21a1,1,0,0,0,.92-1.38Z M3,15H21a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Z M12.5,1.76a1,1,0,0,0-1,0L2,6.33V9H22V6.33ZM4,7V6.75L12,3.12l8,3.63V7Z M22,18.78V16H2v2.78a3,3,0,0,0,3,3h14A3,3,0,0,0,22,18.78ZM5,20a1,1,0,0,1-1-1.22V18H7v2Zm14-1.22V18h1v1A1,1,0,0,1,19,20Zm-5-1a1,1,0,1,1,1,1A1,1,0,0,1,14,19Zm-4,0a1,1,0,1,1,1,1A1,1,0,0,1,10,19Z"></path></svg></div><h3 class="text-2xl font-bold">Bank Guarantees (BG)</h3></div>
+                    <p class="text-lg text-[var(--text-secondary)]">A Bank Guarantee (BG) is a promise from a lending institution that if a borrower defaults, the bank will cover the loss. This instrument enhances credibility and secures performance.</p>
+                    <div class="mt-4 space-y-4">
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Performance Bonds:</span> Secure contracts and projects against non-performance.</p></div>
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Financial Guarantees:</span> Assure payment obligations are met between parties.</p></div>
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Bid Bonds:</span> Provide assurance to project owners in competitive bidding.</p></div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-[var(--dark-card)] text-[var(--primary-gold)]"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M16,13V12.06a4,4,0,0,0,3-3.87,4.12,4.12,0,0,0-4-4.13H11a4,4,0,0,0,0,8h4v1H12.79a1,1,0,0,0-.94.68,2,2,0,0,0,0,1.36,1.93,1.93,0,0,0,1.94,1.94h1.27v1H11.5a4,4,0,0,0,0,8h3.5a4,4,0,0,0,4-4V15h2a1,1,0,0,0,0-2Zm1-4.87a2.1,2.1,0,0,1-2,2.13H11a2,2,0,0,1,0-4h4a2.1,2.1,0,0,1,2,2.13ZM15,19.94a2,2,0,0,1-2.5-2h1a1,1,0,0,0,1.5,1H15Z M20.71,2.29a1,1,0,0,0-1.42,0l-18,18a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l18-18A1,1,0,0,0,20.71,2.29Z"></path></svg></div><h3 class="text-2xl font-bold">Standby Letters of Credit (SBLC)</h3></div>
+                    <p class="text-lg text-[var(--text-secondary)]">An SBLC serves as a backup payment method. It guarantees that if the primary method fails, the bank will fulfill the payment, making it a cornerstone for secure trade and finance.</p>
+                    <div class="mt-4 space-y-4">
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Trade Finance:</span> Facilitates secure international and domestic trade transactions.</p></div>
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Project Finance:</span> Provides financial security for long-term, capital-intensive projects.</p></div>
+                        <div class="flex items-start gap-3"><div class="mt-1 flex-shrink-0 text-[var(--primary-gold)]"><svg fill="currentColor" height="20px" viewBox="0 0 20 20" width="20px"><path d="M10,2a8,8,0,1,0,8,8,8,8,0,0,0-8-8Zm0,14a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm.71-3.29-1-1a1,1,0,0,1,1.42-1.42l.29.29,1.29-1.3a1,1,0,0,1,1.42,1.42Z"></path></svg></div><p class="text-base text-[var(--text-secondary)]"><span class="font-semibold text-white">Credit Enhancement:</span> Enhances creditworthiness for obtaining loans or financing.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20" data-aos="fade-up">
+            <div class="text-center mb-12"><h2 class="text-4xl font-bold">BG vs. SBLC: Interactive Comparison</h2><p class="mt-2 text-lg text-[var(--text-secondary)]">Toggle to understand which suits your needs.</p></div>
+            <div class="overflow-hidden rounded-2xl border border-[var(--dark-border)] bg-[var(--dark-card)]" x-data="{ activeTab: 'bg' }">
+                <div class="flex border-b border-[var(--dark-border)]">
+                    <button :class="{ 'bg-[var(--primary-gold)] text-black': activeTab === 'bg', 'bg-[var(--dark-card)] hover:bg-[#222]': activeTab !== 'bg' }" @click="activeTab = 'bg'" class="flex-1 p-4 text-lg font-bold transition-colors">Bank Guarantee (BG)</button>
+                    <button :class="{ 'bg-[var(--primary-gold)] text-black': activeTab === 'sblc', 'bg-[var(--dark-card)] hover:bg-[#222]': activeTab !== 'sblc' }" @click="activeTab = 'sblc'" class="flex-1 p-4 text-lg font-bold transition-colors">Standby Letter of Credit (SBLC)</button>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div x-show="activeTab === 'bg'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"><h3 class="mb-4 text-2xl font-bold text-white">Bank Guarantee (BG)</h3><dl class="space-y-4"><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Purpose</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Guarantees performance of a contractual obligation.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Usage</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Construction, supply contracts, tenders.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Payment Trigger</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Breach of contract or non-performance.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Risk Mitigation</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Protects beneficiary against loss from non-performance.</dd></div></dl></div>
+                    <div x-show="activeTab === 'sblc'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="display: none;"><h3 class="mb-4 text-2xl font-bold text-white">Standby Letter of Credit (SBLC)</h3><dl class="space-y-4"><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Purpose</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Acts as a secondary payment method if the primary one fails.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Usage</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">International trade, financial transactions.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Payment Trigger</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Non-payment or failure to meet specified conditions.</dd></div><div class="flex flex-col md:flex-row"><dt class="w-full font-semibold text-white md:w-1/3">Risk Mitigation</dt><dd class="w-full text-[var(--text-secondary)] md:w-2/3">Protects beneficiary against non-payment.</dd></div></dl></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20 lg:py-28" data-aos="fade-up">
+            <div class="text-center mb-12"><h2 class="text-4xl font-bold">Our Streamlined Process</h2><p class="mt-2 text-lg text-[var(--text-secondary)]">A transparent journey to securing your financial instruments.</p></div>
+            <div class="relative"><div aria-hidden="true" class="absolute left-4 md:left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[var(--dark-border)]"></div><div class="space-y-12"><div class="relative" data-aos="fade-right"><div class="md:ml-auto md:w-1/2 md:pl-16"><div class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1 h-8 w-8 rounded-full bg-[var(--primary-gold)] text-[var(--dark-bg)] ring-8 ring-[var(--dark-bg)] flex items-center justify-center font-bold">1</div><div class="flex-1 rounded-xl border border-[var(--dark-border)] bg-[var(--dark-card)] p-6"><h3 class="text-xl font-bold">Consultation & Needs Assessment</h3><p class="mt-2 text-base text-[var(--text-secondary)]">We begin with a thorough consultation to understand your business and recommend the most suitable financial instrument.</p></div></div></div><div class="relative" data-aos="fade-left"><div class="md:w-1/2 md:pr-16 md:text-right"><div class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1 h-8 w-8 rounded-full bg-[var(--primary-gold)] text-[var(--dark-bg)] ring-8 ring-[var(--dark-bg)] flex items-center justify-center font-bold">2</div><div class="flex-1 rounded-xl border border-[var(--dark-border)] bg-[var(--dark-card)] p-6"><h3 class="text-xl font-bold">Application & Documentation</h3><p class="mt-2 text-base text-[var(--text-secondary)]">Our team simplifies the application process, guiding you in preparing all necessary documentation for a smooth review.</p></div></div></div><div class="relative" data-aos="fade-right"><div class="md:ml-auto md:w-1/2 md:pl-16"><div class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1 h-8 w-8 rounded-full bg-[var(--primary-gold)] text-[var(--dark-bg)] ring-8 ring-[var(--dark-bg)] flex items-center justify-center font-bold">3</div><div class="flex-1 rounded-xl border border-[var(--dark-border)] bg-[var(--dark-card)] p-6"><h3 class="text-xl font-bold">Issuance & Swift Delivery</h3><p class="mt-2 text-base text-[var(--text-secondary)]">Upon approval, your BG or SBLC is issued promptly. We ensure secure and timely delivery to the beneficiary.</p></div></div></div><div class="relative" data-aos="fade-left"><div class="md:w-1/2 md:pr-16 md:text-right"><div class="absolute -left-1.5 md:left-auto md:-right-1.5 top-1 h-8 w-8 rounded-full bg-[var(--primary-gold)] text-[var(--dark-bg)] ring-8 ring-[var(--dark-bg)] flex items-center justify-center font-bold">4</div><div class="flex-1 rounded-xl border border-[var(--dark-border)] bg-[var(--dark-card)] p-6"><h3 class="text-xl font-bold">Ongoing Support & Management</h3><p class="mt-2 text-base text-[var(--text-secondary)]">Our relationship doesn't end at issuance. We provide continuous support for the entire lifecycle of your instrument.</p></div></div></div></div></div>
+        </section>
+
+        <!-- === TESTIMONIALS SECTION ADDED BACK === -->
+        <section class="pb-20 lg:pb-28" data-aos="fade-up">
+            <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold">What Our Clients Say</h2><p class="mt-4 text-lg text-[var(--text-secondary)]">Trusted by businesses worldwide.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-[var(--dark-card)] p-8 rounded-xl border border-[var(--dark-border)]"><div class="flex items-center justify-between"><div class="flex items-center gap-4"><img class="w-14 h-14 rounded-full object-cover" src="images/servicestestimonial-1.jpg" alt="Client Alex Johnson"><div><h3 class="font-bold">Alex Johnson</h3><p class="text-sm text-[var(--text-secondary)]">CEO, Innovatech Global</p></div></div><div class="flex text-yellow-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div></div><p class="mt-4 text-[var(--text-secondary)]">"Their expertise in SBLC was unmatched, and the process was surprisingly fast. A truly premium service for our international expansion."</p></div><div class="bg-[var(--dark-card)] p-8 rounded-xl border border-[var(--dark-border)]"><div class="flex items-center justify-between"><div class="flex items-center gap-4"><img class="w-14 h-14 rounded-full object-cover" src="images/servicestestimonial-2.jpg" alt="Client Samantha Lee"><div><h3 class="font-bold">Samantha Lee</h3><p class="text-sm text-[var(--text-secondary)]">CFO, Apex Construction</p></div></div><div class="flex text-yellow-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div></div><p class="mt-4 text-[var(--text-secondary)]">"The platform made the documentation seamless. We secured a Bank Guarantee for a major project with incredible efficiency. Highly recommended."</p></div>
+                <div class="bg-[var(--dark-card)] p-8 rounded-xl border border-[var(--dark-border)]"><div class="flex items-center justify-between"><div class="flex items-center gap-4"><img class="w-14 h-14 rounded-full object-cover" src="images/servicestestimonial-3.jpg" alt="Client David Chen"><div><h3 class="font-bold">David Chen</h3><p class="text-sm text-[var(--text-secondary)]">Director, Global Imports</p></div></div><div class="flex text-yellow-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div></div><p class="mt-4 text-[var(--text-secondary)]">"Since 2015, we've relied on them for our trade finance needs. Their consistent, reliable service has been a cornerstone of our success."</p></div>
+            </div>
+        </section>
+
+        <section class="bg-[var(--dark-card)] rounded-2xl p-8 md:p-12 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl lg:text-4xl font-bold">Ready to Secure Your Financial Future?</h2>
+            <p class="mt-4 max-w-xl mx-auto text-[var(--text-secondary)]">Take the next step towards secure transactions. Contact our experts today for a personalized consultation.</p>
+            <a href="contact.html" class="mt-8 inline-block px-8 py-4 rounded-full bg-[var(--primary-gold)] text-black text-base font-bold hover:bg-yellow-300 transition-transform transform hover:scale-105">Get a Free Consultation</a>
+        </section>
+
+    </div>
+</main>
+
+<footer class="bg-[#0c0c0c] border-t border-[var(--dark-border)]">
+    <div class="container mx-auto px-6 lg:px-10 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="lg:col-span-1"><a href="index.html" class="inline-block mb-4"><img src="images/logo.png" alt="Finance Company Limited Logo" class="h-14 w-auto"></a><p class="text-sm text-[var(--text-secondary)]">Your trusted partner since 2012 for BG & SBLC financial instruments.</p></div>
+             <div class="lg:col-start-3"><h3 class="font-bold text-white text-lg">Quick Links</h3><nav class="mt-4 flex flex-col gap-3">
+                <a class="text-sm text-[var(--text-secondary)] hover:text-white hover:pl-2 transition-all" href="index.html">Home</a>
+                <a class="text-sm text-[var(--primary-gold)] hover:text-white hover:pl-2 transition-all" href="services.html">Services</a>
+                <a class="text-sm text-[var(--text-secondary)] hover:text-white hover:pl-2 transition-all" href="about.html">About Us</a>
+                <a class="text-sm text-[var(--text-secondary)] hover:text-white hover:pl-2 transition-all" href="privacy.html">Privacy Policy</a>
+                <a class="text-sm text-[var(--text-secondary)] hover:text-white hover:pl-2 transition-all" href="terms.html">Terms & Conditions</a>
+                <a class="text-sm text-[var(--text-secondary)] hover:text-white hover:pl-2 transition-all" href="contact.html">Contact Us</a>
+            </nav></div>
+            <div>
+                 <h3 class="font-bold text-white text-lg">Contact Us</h3>
+                 <div class="mt-4 flex flex-col gap-3">
+                     <p class="text-sm flex items-start gap-3 text-[var(--text-secondary)]"><svg class="h-5 w-5 mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>3400 West Lawrence Avenue, Chicago, IL, 17230</p>
+                      <a href="mailto:financecompanylimited2@gmail.com" class="text-sm flex items-center gap-3 text-[var(--text-secondary)] hover:text-white"><svg class="h-5 w-5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>financecompanylimited2@gmail.com</a>
+                      <a href="tel:+13863891734" class="text-sm flex items-center gap-3 text-[var(--text-secondary)] hover:text-white"><svg class="h-5 w-5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>+1 (386) 389-1734</a>
+                 </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-[var(--dark-border)] text-center text-sm text-[var(--text-secondary)]"><p>© 2025 FINANCE COMPANY LIMITED. All rights reserved.</p></div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true, offset: 50 });
+    window.addEventListener('scroll', function() { document.getElementById('main-header').classList.toggle('header-scrolled', window.scrollY > 50); });
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    closeMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    mobileLinks.forEach(link => link.addEventListener('click', () => mobileMenu.classList.remove('open')));
+</script>
+<!-- === AI CHATBOT CONTAINER === -->
+<div id="ai-chatbot-container">
+    <!-- Chat Button -->
+    <button id="chat-toggle-btn" class="fixed bottom-6 right-6 z-[9998] bg-[var(--primary-gold)] text-black rounded-full h-16 w-16 flex items-center justify-center shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--dark-bg)] focus:ring-[var(--primary-gold)]">
+        <svg id="chat-icon-open" class="h-8 w-8 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+        <svg id="chat-icon-close" class="h-8 w-8 transition-opacity duration-300 absolute opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+
+    <!-- Chat Window -->
+    <div id="chat-window" class="fixed bottom-[100px] right-6 z-[9999] w-[calc(100vw-3rem)] max-w-sm h-[60vh] max-h-[500px] bg-[var(--dark-card)] rounded-xl shadow-2xl border border-[var(--dark-border)] flex flex-col transition-all duration-300 transform scale-95 opacity-0 pointer-events-none">
+        <!-- Header -->
+        <div class="p-4 border-b border-[var(--dark-border)] flex-shrink-0">
+            <h3 class="font-bold text-white text-lg">AI Financial Assistant</h3>
+            <p class="text-xs text-[var(--text-secondary)]">Powered by Google AI</p>
+        </div>
+        <!-- Messages -->
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-4">
+            <div class="p-3 bg-gray-700 rounded-lg max-w-[85%] self-start text-sm mr-auto">
+                Hello! I am Finny, your AI assistant. How can I help you with our Bank Guarantee or SBLC services today?
+            </div>
+        </div>
+        <!-- Input Form -->
+        <div class="p-4 border-t border-[var(--dark-border)] bg-[var(--dark-card)] flex-shrink-0">
+            <form id="chat-form" class="flex gap-2">
+                <input id="chat-input" type="text" placeholder="Ask a question..." autocomplete="off" class="flex-1 p-2 rounded-lg text-sm bg-[#222] border-[var(--dark-border)] focus:ring-[var(--primary-gold)] focus:border-[var(--primary-gold)] text-white">
+                <button type="submit" class="p-2 rounded-lg bg-[var(--primary-gold)] text-black flex-shrink-0">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const chatToggleButton = document.getElementById('chat-toggle-btn');
+    const chatWindow = document.getElementById('chat-window');
+    const chatIconOpen = document.getElementById('chat-icon-open');
+    const chatIconClose = document.getElementById('chat-icon-close');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+
+    chatToggleButton.addEventListener('click', () => {
+        const isOpen = chatWindow.classList.toggle('scale-100');
+        chatWindow.classList.toggle('opacity-100');
+        chatWindow.classList.toggle('pointer-events-auto');
+        
+        chatIconOpen.classList.toggle('opacity-0');
+        chatIconClose.classList.toggle('opacity-0');
+
+        if(isOpen) {
+            chatInput.focus();
+        }
+    });
+
+    chatForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const userMessage = chatInput.value.trim();
+        if (!userMessage) return;
+
+        addMessage(userMessage, 'user');
+        chatInput.value = '';
+        addTypingIndicator();
+
+        try {
+            // Humare backend function ko call karna
+            const response = await fetch('/.netlify/functions/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userMessage }),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Network response was not ok');
+            }
+            
+            const data = await response.json();
+            removeTypingIndicator();
+            addMessage(data.reply, 'bot');
+            
+        } catch (error) {
+            console.error('Error:', error);
+            removeTypingIndicator();
+            addMessage('Sorry, I am having trouble connecting at the moment. Please try again later.', 'bot');
+        }
+    });
+
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        // Simple Markdown to HTML conversion for links
+        const formattedText = text
+            .replace(/\n/g, '<br>')
+            .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="text-[var(--primary-gold)] hover:underline">$1</a>');
+
+        if (sender === 'user') {
+            messageDiv.className = 'p-3 bg-[var(--primary-gold)] text-black rounded-lg max-w-[85%] self-end text-sm ml-auto';
+        } else {
+            messageDiv.className = 'p-3 bg-gray-700 rounded-lg max-w-[85%] self-start text-sm mr-auto';
+        }
+        
+        messageDiv.innerHTML = formattedText;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Hamesha neeche scroll karein
+    }
+
+    function addTypingIndicator() {
+        const typingDiv = document.createElement('div');
+        typingDiv.id = 'typing-indicator';
+        typingDiv.className = 'p-3 bg-gray-700 rounded-lg max-w-min self-start text-sm';
+        typingDiv.innerHTML = '<div class="flex items-center gap-1"><div class="h-2 w-2 bg-gray-400 rounded-full animate-pulse"></div><div class="h-2 w-2 bg-gray-400 rounded-full animate-pulse [animation-delay:0.2s]"></div><div class="h-2 w-2 bg-gray-400 rounded-full animate-pulse [animation-delay:0.4s]"></div></div>';
+        chatMessages.appendChild(typingDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    
+    function removeTypingIndicator() {
+        const typingDiv = document.getElementById('typing-indicator');
+        if (typingDiv) {
+            typingDiv.remove();
+        }
+    }
+</script>
+<!-- === END AI CHATBOT === -->
+</body>
+</html>
